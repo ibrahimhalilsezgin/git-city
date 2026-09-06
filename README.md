@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏙️ Git City — 3D Code Visualizer & Timeline Simulator
 
-## Getting Started
+Turn any GitHub repository into an interactive 3D isometric city with a commit timeline simulator.
 
-First, run the development server:
+![Git City Preview](./public/preview.png)
 
+## ✨ Features
+
+- **🏛️ Squarified Treemap Layout:** Folders turn into city districts, files become buildings, lines of code (LOC) dictate building heights.
+- **⏳ Interactive Commit Timeline:** Play/Pause auto-simulation, 0.5x–4x speed, and scrubbing slider to watch your project grow commit-by-commit.
+- **🎨 Pastel Language Coding:** Automatic syntax detection and pastel palette coloring for over 25+ programming languages.
+- **⚡ Zero-Config Demo Repos:** Instant offline exploration with rich snapshots for `vercel/swr` and `expressjs/express`.
+- **🔑 GitHub API & Personal Access Token:** Query any public or private repository with PAT support to bypass anonymous rate limits.
+- **🎥 Isometric & Perspective Camera Controls:** Free OrbitControls (pan, tilt, zoom), plus quick presets (Isometric, Top-Down, Front).
+- **📊 Real-time Codebase Telemetry:** Dynamic language distribution breakdown, active contributor cards, and raycast inspection tooltips.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 16 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **3D Engine:** Three.js & OrbitControls
+- **Icons:** Lucide React
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone & Install
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/ibrahimhalilsezgin/git-city.git
+cd git-city
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Run Development Server
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🎮 Controls
 
-To learn more about Next.js, take a look at the following resources:
+- **Left Mouse Click + Drag:** Rotate camera
+- **Right Mouse Click + Drag:** Pan camera
+- **Scroll Wheel:** Zoom in / out
+- **Hover on Building:** View filename, LOC, and language
+- **Click on Building:** Inspect file details and lock camera target
+- **Spacebar:** Play / Pause timeline simulation
+- **Left / Right Arrow Keys:** Step backward / forward through commits
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built by [İbrahim Halil Sezgin](https://ibrahimhalilsezgin.com).
