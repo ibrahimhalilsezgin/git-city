@@ -2,6 +2,8 @@
 
 Turn any GitHub repository into an interactive 3D isometric city with a commit timeline simulator.
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-city.ibrahimhalilsezgin.com-38bdf8?style=for-the-badge&logo=vercel)](https://city.ibrahimhalilsezgin.com)
+
 ![Git City Preview](./public/preview.png)
 
 ## ✨ Features
